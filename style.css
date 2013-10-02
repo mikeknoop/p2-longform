@@ -932,7 +932,7 @@ padding-left: 0;
 	padding-top: 14px;
 }
 .commentcontent p {
-	font-size: 0.9em;
+	font-size: 0.9em !important;
 }
 .postcontent h1, .commentcontent h1,
 .postcontent h2, .commentcontent h2,
