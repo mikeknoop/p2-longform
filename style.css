@@ -1133,8 +1133,9 @@ h3 {
 #main #postlist .commentlist li {
 	/*border-top-color: #ddd;*/
     border: 0;
-    margin-bottom: 20px;
-    margin-top: 25px;
+		margin-bottom: 5px;
+		margin-top: 10px;
+		font-size: 13px;
 }
 #main #postlist .commentlist li.bypostauthor {
 	/*border-top-color: #b3c4df;*/
