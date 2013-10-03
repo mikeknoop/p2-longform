@@ -1454,6 +1454,7 @@ h4, h5, h6 {
 }
 #main .postcontent h2:first-child {
 	font-size: 2em;
+	line-height: 1.1em;
 	font-weight: 500;
 }
 .inlineediting input.title {
