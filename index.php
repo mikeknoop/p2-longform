@@ -10,6 +10,15 @@
  *
  * @package P2
  */
+
+ if ($_GET["last-24"] == True) {
+	function filter_where($where = '') { 
+	  $where .= " AND post_date > '" . date('Y-m-d H:i:s', strtotime('-24 hours')) . "'"; 
+	  return $where; 
+	} 
+	add_filter('posts_where', 'filter_where');
+ }
+
 ?>
 <?php get_header(); ?>
 
