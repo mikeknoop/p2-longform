@@ -10,14 +10,6 @@
  *
  * @package P2
  */
- if ($_GET["last24"] == "true") {
-	function filter_where($where = '') { 
-	  $where .= " AND post_date > '" . date('Y-m-d H:i:s', strtotime('-24 hours')) . "'"; 
-	  return $where; 
-	} 
-	add_filter('posts_where', 'filter_where');
- }
-
 ?>
 <?php get_header(); ?>
 
@@ -44,6 +36,17 @@
 
 		<ul id="postlist">
 		<?php if ( have_posts() ) : ?>
+
+			<?php
+			 if ($_GET["last24"] == "true") {
+				function filter_where($where = '') { 
+				  $where .= " AND post_date > '" . date('Y-m-d H:i:s', strtotime('-24 hours')) . "'";
+				  print($where);
+				  return $where; 
+				} 
+				add_filter('posts_where', 'filter_where');
+			 }
+ 			?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 	    		<?php p2_load_entry(); ?>
