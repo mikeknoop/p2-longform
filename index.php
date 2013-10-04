@@ -10,8 +10,7 @@
  *
  * @package P2
  */
-
- if ($_GET["last-24"] == True) {
+ if ($_GET["last24"] == "true") {
 	function filter_where($where = '') { 
 	  $where .= " AND post_date > '" . date('Y-m-d H:i:s', strtotime('-24 hours')) . "'"; 
 	  return $where; 
