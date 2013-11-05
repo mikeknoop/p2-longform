@@ -1578,15 +1578,15 @@ form.textedit textarea {
 }
 .postcontent table,
 .commentcontent table {
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 	border-width: 1px 1px 1px 0;
 	border-spacing: 0;
-	margin: .7em 0 1.5em;
+	/*margin: .7em 0 1.5em;*/
 	width: 100%;
 }
 .postcontent table td,
 .commentcontent table td {
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 	border-width: 1px 0 0 1px;
 	padding: 6px 15px;
 }
