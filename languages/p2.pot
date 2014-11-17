@@ -99,7 +99,7 @@ msgid "Required fields are marked %s"
 msgstr ""
 
 #: entry.php:117
-msgid "Toggle Comments"
+msgid "Toggle Post & Comments"
 msgstr ""
 
 #: entry.php:122
