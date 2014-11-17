@@ -926,6 +926,10 @@ li.newupdates, li.newcomment {
 .home .postcontent > h2:first-child {
 	display: block;
 }
+.home .postcontent .discussion {
+	display: none;
+	margin-left: 0px !important;
+}
 .page .postcontent {
 padding-left: 0;
 }
@@ -1055,7 +1059,7 @@ div.entry {
 }
 .discussion {
     margin-left: 70px;
-	margin-top: 20px;
+	margin-top: -10px;
 }
 .discussion p a img {
 	padding: 0 !important;
