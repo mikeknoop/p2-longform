@@ -265,10 +265,12 @@ function p2_toggle_threads() {
 	/* <![CDATA[ */
 		jQuery( document ).ready( function( $ ) {
 			function hideComments() {
+				$('.postcontent').removeClass('show');
 				$('.commentlist').hide();
 				$('.discussion').show();
 			}
 			function showComments() {
+				$('.postcontent').addClass('show');
 				$('.commentlist').show();
 				$('.discussion').hide();
 			}
