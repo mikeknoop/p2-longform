@@ -114,7 +114,7 @@
 		<div class="discussion" style="display: none">
 			<p>
 				<?php p2_discussion_links(); ?>
-				<a href="#" class="show-comments"><?php _e( 'Toggle Post & Comments', 'p2' ); ?></a>
+				<a href="#" class="show-comments"><?php _e( 'Toggle Post & Comments', 'p2' ); ?> (<?php echo get_comments_number(); ?>)</a>
 			</p>
 		</div>
 	<?php endif;
