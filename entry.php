@@ -110,11 +110,11 @@
 
 	?>
 
-	<?php if ( get_comments_number() > 0 && ! post_password_required() ) : ?>
+	<?php if (! post_password_required() ) : ?>
 		<div class="discussion" style="display: none">
 			<p>
 				<?php p2_discussion_links(); ?>
-				<a href="#" class="show-comments"><?php _e( 'Toggle Comments', 'p2' ); ?></a>
+				<a href="#" class="show-comments"><?php _e( 'Toggle Post & Comments', 'p2' ); ?></a>
 			</p>
 		</div>
 	<?php endif;
