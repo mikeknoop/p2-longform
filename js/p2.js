@@ -165,14 +165,15 @@ window.p2 = window.p2 || {};
 			var postContent = $(this).closest('.post').find('.postcontent');
 			var discussion = $(this).closest('.post').find('.discussion');
 			var title = postContent.children('h2:first-child');
-			discussion.insertAfter(title);
 			if (isPage) {
 				commentList = $('.page .commentlist');
 			}
 			if (commentList.css('display') == 'none') {
+				discussion.insertAfter(title);
 				commentList.show();
 				postContent.addClass('show');
 			} else {
+				discussion.insertAfter(postContent);
 				commentList.hide();
 				postContent.removeClass('show');
 			}
