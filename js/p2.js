@@ -163,6 +163,9 @@ window.p2 = window.p2 || {};
 		$(".show-comments").click(function(){
 			var commentList = $(this).closest('.post').find('.commentlist');
 			var postContent = $(this).closest('.post').find('.postcontent');
+			var discussion = $(this).closest('.post').find('.discussion');
+			var title = postContent.children('h2:first-child');
+			discussion.insertAfter(title);
 			if (isPage) {
 				commentList = $('.page .commentlist');
 			}
