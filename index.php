@@ -30,7 +30,7 @@
 			<?php endif; ?>
 
 			<span class="controls">
-				<a href="#" id="togglecomments"> <?php _e( 'Toggle Comment Threads', 'p2' ); ?></a> | <a href="#directions" id="directions-keyboard"><?php _e( 'Keyboard Shortcuts', 'p2' ); ?></a>
+				<a href="#" id="togglecomments"> <?php _e( 'Toggle Posts & Comments', 'p2' ); ?></a> | <a href="#directions" id="directions-keyboard"><?php _e( 'Keyboard Shortcuts', 'p2' ); ?></a>
 			</span>
 		</h2>
 
