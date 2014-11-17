@@ -162,13 +162,16 @@ window.p2 = window.p2 || {};
 
 		$(".show-comments").click(function(){
 			var commentList = $(this).closest('.post').find('.commentlist');
+			var postContent = $(this).closest('.post').find('.postcontent');
 			if (isPage) {
 				commentList = $('.page .commentlist');
 			}
 			if (commentList.css('display') == 'none') {
 				commentList.show();
+				postContent.addClass('show');
 			} else {
 				commentList.hide();
+				postContent.removeClass('show');
 			}
 			return false;
 		});
