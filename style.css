@@ -915,7 +915,13 @@ li.newupdates, li.newcomment {
 .postcontent {
 	overflow: visible;
 	padding-left: 70px;
-    padding-right: 15px;
+    	padding-right: 15px;
+}
+.home .postcontent * {
+	display: none;
+}
+.home .postcontent > h2 {
+	display: block;
 }
 .page .postcontent {
 padding-left: 0;
