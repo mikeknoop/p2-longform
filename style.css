@@ -920,6 +920,9 @@ li.newupdates, li.newcomment {
 .home .postcontent > * {
 	display: none;
 }
+.home .postcontent.show > * {
+	display: inherit !important;
+}
 .home .postcontent > h2:first-child {
 	display: block;
 }
