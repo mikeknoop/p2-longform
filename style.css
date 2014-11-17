@@ -917,10 +917,10 @@ li.newupdates, li.newcomment {
 	padding-left: 70px;
     	padding-right: 15px;
 }
-.home .postcontent * {
+.home .postcontent > * {
 	display: none;
 }
-.home .postcontent > h2 {
+.home .postcontent > h2:first-child {
 	display: block;
 }
 .page .postcontent {
